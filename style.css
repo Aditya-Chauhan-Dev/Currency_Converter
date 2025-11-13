@@ -107,3 +107,83 @@ form button:hover{
     transform: scale(1.2);
     transition: transform 0.6s ease;
 }
+
+/* Tablet / small laptop adjustments */
+@media (min-width: 601px) and (max-width: 1024px){
+    .converter{
+        width: min(600px, 90%);
+        padding: 1.5rem;
+        border-radius: 24px;
+    }
+    .currency_list img{
+        max-width: 5rem;
+    }
+    h1{
+        font-size: 1.9rem;
+    }
+}
+
+/* Mobile layout improvements */
+@media (max-width: 600px) {
+    .container{
+        padding: 1rem;
+    }
+
+    .converter{
+        padding: 1rem;
+        border-radius: 18px;
+    }
+
+    h1{
+        font-size: 1.4rem;
+        margin: 0.5rem 0;
+    }
+
+    .dropdown{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+        margin-top: 1.25rem;
+    }
+
+    .dropdown i{
+        margin-top: 0;
+        font-size: 1.25rem;
+    }
+
+    .currency_list{
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .currency_list img{
+        max-width: 4rem;
+    }
+
+    .amount p {
+        font-size: 1.25rem;
+    }
+
+    form input{
+        height: 2.2rem;
+        font-size: 0.95rem;
+    }
+
+    .dropdown p{
+        font-size: 1rem;
+    }
+
+    /* make the "75%" button width comfortable on mobile */
+    form button{
+        width: 100%;
+    }
+}
+
+/* Larger desktop tweaks (optional) */
+@media (min-width: 1200px) {
+    .converter{
+        box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+    }
+}
